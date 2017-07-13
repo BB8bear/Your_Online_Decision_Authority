@@ -1,0 +1,46 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: #C9D3A7;
+}
+
+.container {
+	padding: 10px 20px;
+}
+
+h1 {
+	color: #5A7250;
+}
+
+/*Quote Styling*/
+blockquote {
+	font-size: 18px;
+	font-style: italic;
+	width: 500px;
+	margin: 0.25em 0;
+	padding: 0.25em 40px;
+	line-height: 1.45;
+	position: relative;
+	color: #788b6f;
+}
+
+blockquote:before {
+	display: block;
+	content: "\201C";
+	font-size: 80px;
+	position: absolute;
+	left: -20px;
+	top: -20px;
+	color: #ece4c1;
+}
+
+blockquote cite {
+	color: #96a58f;
+	font-size: 14px;
+	display: block;
+	margin-top: 5px;
+}
+ 
+blockquote cite:before {
+	content: "\2014 \2009";
+}
+

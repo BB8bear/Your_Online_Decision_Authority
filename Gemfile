@@ -14,6 +14,8 @@ gem 'rake'
 
 gem 'shotgun', '~>0.9.1'
 
+gem 'pry-byebug'
+
 group :test do
   gem 'shoulda-matchers'
   gem 'rack-test'
@@ -24,5 +26,4 @@ end
 group :test, :development do
   gem 'factory_girl'
   gem 'faker'
-  gem 'pry-byebug'
 end
