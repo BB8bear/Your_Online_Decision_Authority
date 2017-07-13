@@ -1,30 +1,25 @@
-> **Note**: This branch (master) contains a skeleton without any app code, perfect for creating a _new_ application or challenge. If you're looking for an example app built with this skeleton, take a look at the [example](/../..//tree/example) branch which includes basic CRUD and RSpec tests.
+# Your Online Decision Authority
 
-### Purpose
-The Sinatra Skeleton:
+<img class="inline" src="https://github.com/BB8bear/your_online_decision_authority/blob/master/public/yoda.png" width="300" height="300" />
 
-1. Provides a foundation for building challenges or creating a new Sinatra application.
-2. Demonstrates a reasonable set of practices around building Sinatra applications.
-3. Eases the transition to Rails for Dev Bootcamp students
+> Hungry you have become, the dark side I sense in you." 
+> ~ Master Yoda, probably
 
-### Quickstart
 
-1.  `bundle install`
-2.  `shotgun config.ru`
+## Eat, you must.
+This app will let Yoda choose a restaurant for the user to visit based on user input. Restaurant Picker will take user input to remove options from a food category list, and randomly select a category for the user. 
 
-As needed, create models & migrations with the `rake` tasks:
+The user will have the option to re-spin the food category selection wheel, or continue to the restaurant suggestion. If they re-spin the category that was originally returned will be removed from the option list in future spins.
 
-```
-rake generate:migration  # Create an empty migration in db/migrate, e.g., rake generate:migration NAME=create_tasks
-rake generate:model      # Create an empty model in app/models, e.g., rake generate:model NAME=User
-```
+The app will then return the nearest top rated restaurant in that category, based on user location. The user will have the option to pass on the first result and ask for the second result, or the user will have the option to re-spin the food category selection wheel and start over.
 
-### Contributing
 
-We would love for you to help make the skeleton more awesome, There are three ways to contribute:
+## Stretch Goals
+- Find user location based on GPS.
+- Give user directions to restaurant from their current location.
 
-1. Ask for a bug fix or enhancement!
-2. Submit a pull request for a bug fix or enhancement!
-3. Code review an open pull request!
 
-Be prepared to give and receive specific, actionable, and kind feedback!
+## Resources
+- [Yelp's Fusion API](https://www.yelp.com/developers/documentation/v3)
+- [Postman](https://www.getpostman.com/)
+- [Heroku](https://www.heroku.com/)
