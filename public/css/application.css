@@ -30,7 +30,7 @@ a {
 }
 
 .options.container {
-	padding-top: 200px;
+	/*padding-top: 50px;*/
 	margin-right: 25px;
 }
 
@@ -65,6 +65,19 @@ a {
 	float: left;
 	padding: 10px 50px 0 0;
 	margin-top: 100px;
+}
+
+
+.location.container {
+    display: block;
+
+}
+
+input.submit {
+    background: none;
+    border: none;
+    font-size: x-large;
+    padding: 20px;
 }
 
 /*Navbar Styling*/
