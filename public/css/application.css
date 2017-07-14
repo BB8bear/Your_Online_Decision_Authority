@@ -1,0 +1,143 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: #C9D3A7;
+	color: #5A7250;
+	width: 100%;
+}
+
+.container {
+
+}
+
+h1 {
+	color: #5A7250;
+	font-size: xx-large;
+}
+
+a {
+	text-decoration: none;
+}
+
+.block {
+    display: block;
+    float: left;
+    top: 0;
+}
+
+.block2 {
+    margin-top: 7px;
+    float: right;
+}
+
+.options.container {
+	padding-top: 200px;
+	margin-right: 25px;
+}
+
+.black {
+	color: black;
+	font-weight: 800;
+	font-size: larger;
+}
+
+.new-user-form {
+	padding: 50px;
+	margin: 0 auto;
+	width: 40%;
+}
+
+.new-user-form input {
+	float: right;
+}
+
+.food-categories input[type="submit"] {
+	border: none;
+	background: #ECE4C1;
+	padding: 10px;
+	color: #866559;
+	margin: 5px;
+}
+
+.yoda {
+	height: 500px;
+	width: 500px;
+	display: block;
+	float: left;
+	padding: 10px 50px 0 0;
+	margin-top: 100px;
+}
+
+/*Navbar Styling*/
+
+nav.navbar {
+    position: fixed;
+    top: 0;
+    height: 100px;
+    width: 100%;
+}
+
+h1.nav {
+	float: left;
+	display: inline-block;
+	padding-left: 20px;
+}
+
+nav li {
+	float: right;
+	list-style-type: none;
+	text-decoration: none;
+	padding: 10px;
+	font-size: x-large;
+}
+
+nav li a {
+	color: #5A7250;
+}
+
+nav ul {
+	float: right;
+	margin-right: 50px;
+}
+
+input#logout {
+    border: none;
+    background: none;
+    padding-top: 0;
+}
+
+
+/*Quote Styling*/
+blockquote {
+	font-size: 18px;
+	font-style: italic;
+	width: 500px;
+	margin: 0.25em 0;
+	padding: 0.25em 40px;
+	line-height: 1.45;
+	position: relative;
+	color: #788b6f;
+	top: 100px;
+	margin-left: 25px;
+}
+
+blockquote:before {
+	display: block;
+	content: "\201C";
+	font-size: 80px;
+	position: absolute;
+	left: -20px;
+	top: -20px;
+	color: #ece4c1;
+}
+
+blockquote cite {
+	color: #96a58f;
+	font-size: 14px;
+	display: block;
+	margin-top: 5px;
+}
+ 
+blockquote cite:before {
+	content: "\2014 \2009";
+}
+

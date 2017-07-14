@@ -1,0 +1,24 @@
+<nav class="navbar">
+
+	<div class="block">
+	  	<a href="/"><h1 class="nav"><b class='black'>Y</b>our <b class='black'>O</b>nline <b class='black'>D</b>ecision <b class='black'>A</b>uthority</h1></a>
+	  	</div>
+	<div class="block2">
+		<ul>
+		  	<% if logged_in? %>
+		  		<li>
+		  		<form action="/sessions" method="post">
+		  			<input type="hidden" name="_method" value="delete">
+		  			<a><input id="logout" type="submit" value="Logout"></a>
+		  		</form>
+		  	</li>
+		  	<li><a href="/users/<%=current_user.id %>">Profile</a></li>
+
+		  	<% else %>
+		  	<li><a href="/sessions/new">Log In</a></li>
+		  	<li><a href="/users/new">Sign Up</a></li>
+		  	<% end %>
+		  	<li><a href="/">Home</a></li>
+		</ul>
+	</div>
+  </nav>

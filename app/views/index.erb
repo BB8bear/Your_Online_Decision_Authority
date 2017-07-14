@@ -1,0 +1,37 @@
+<div class="container">
+	
+	<%= erb :'_navbar', layout: false %>
+</div>
+
+<div class="container">
+	<blockquote>
+		Hunger is the path to the dark side. Hunger leads to anger. Anger leads to hate. Hate leads to suffering.
+		<cite>Master Yoda, probably.</cite>
+	</blockquote>
+</div>
+
+<div class="image container">
+	<img src="https://preview.ibb.co/n2oMSv/yoda.png" class="yoda" border="0">
+</div>
+
+<div class="options container">
+	<div class="instruction">
+		<h2>To remove undesired food options, click you must.</h2>
+	</div>
+
+	<div class="food-categories">
+		<form action="/" method="POST">
+			<input type="submit" name="categories" value="mexican">
+			<input type="submit" name="categories" value="italian">
+			<input type="submit" name="categories" value="chinese">
+			<input type="submit" name="categories" value="indian">
+			<input type="submit" name="categories" value="thai"><br>
+			<input type="submit" name="categories" value="cuban">
+			<input type="submit" name="categories" value="mediterranean">
+			<input type="submit" name="categories" value="korean">
+			<input type="submit" name="categories" value="french">
+			<input type="submit" name="categories" value="german">
+		</form>
+	</div>
+</div>
+
