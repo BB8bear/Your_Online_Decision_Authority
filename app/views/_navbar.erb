@@ -12,7 +12,7 @@
 		  			<a><input id="logout" type="submit" value="Logout"></a>
 		  		</form>
 		  	</li>
-		  	<li><a href="/users/show">Profile</a></li>
+		  	<li><a href="/users/<%=current_user.id %>">Profile</a></li>
 
 		  	<% else %>
 		  	<li><a href="/sessions/new">Log In</a></li>

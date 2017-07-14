@@ -10,7 +10,7 @@ post '/sessions' do
 
 	if @user && @user.authenticate(params[:password])
 		session[:id] = @user.id
-		redirect '/users/show'
+		redirect "/users/#{@user.id}"
 	else
 		@errors = ['Incorrect, your login or password is. Try again.']
 		erb :'/sessions/new'

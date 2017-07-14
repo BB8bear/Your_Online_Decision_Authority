@@ -99,8 +99,11 @@ nav ul {
 	margin-right: 50px;
 }
 
-
-
+input#logout {
+    border: none;
+    background: none;
+    padding-top: 0;
+}
 
 
 /*Quote Styling*/
