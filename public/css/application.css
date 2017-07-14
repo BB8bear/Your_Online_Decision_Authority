@@ -18,6 +18,14 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	color: white;
+}
+
+input[type="submit"]:hover {
+	color: white;
+}
+
 .block {
     display: block;
     float: left;
