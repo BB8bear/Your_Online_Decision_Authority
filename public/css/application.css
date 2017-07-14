@@ -14,7 +14,9 @@ h1 {
 
 .categories input[type="submit"] {
 	border: none;
-	background: none;
+	background: #E2D69E;
+	padding: 10px;
+	color: #7A5649;
 }
 
 /*Quote Styling*/
