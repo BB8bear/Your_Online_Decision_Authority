@@ -60,9 +60,9 @@ input[type="submit"]:hover {
 
 .food-categories input[type="submit"] {
 	border: none;
-	background: #ECE4C1;
+	background: #e3e6d5;
 	padding: 10px;
-	color: #866559;
+	color: #806246;
 	margin: 5px;
 }
 
