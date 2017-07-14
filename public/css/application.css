@@ -1,6 +1,6 @@
 body {
 	font-family: 'Montserrat', sans-serif;
-	background-color: #C9D3A7;
+	background-color: #BADA55/*#C9D3A7*/;
 	color: #5A7250;
 }
 
@@ -14,10 +14,11 @@ h1 {
 
 .black {
 	color: black;
-	font-weight: 700;
+	font-weight: 800;
+	font-size: larger;
 }
 
-.categories input[type="submit"] {
+.food-categories input[type="submit"] {
 	border: none;
 	background: #ECE4C1;
 	padding: 10px;
@@ -26,8 +27,8 @@ h1 {
 }
 
 .yoda {
-	height: 25%;
-	width: 25%;
+	height: 500px;
+	width: 500px;
 	display: block;
 	float: left;
 	padding: 0 50px 0 0;
