@@ -12,7 +12,7 @@ h1 {
 	color: #5A7250;
 }
 
-.categories input {
+.categories input[type="submit"] {
 	border: none;
 	background: none;
 }
