@@ -16,6 +16,8 @@ gem 'shotgun', '~>0.9.1'
 
 gem 'pry-byebug'
 
+gem 'yelp'
+
 group :test do
   gem 'shoulda-matchers'
   gem 'rack-test'

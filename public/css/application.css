@@ -11,6 +11,11 @@ h1 {
 	color: #5A7250;
 }
 
+.categories li {
+	border: none;
+	background: none;
+}
+
 /*Quote Styling*/
 blockquote {
 	font-size: 18px;
