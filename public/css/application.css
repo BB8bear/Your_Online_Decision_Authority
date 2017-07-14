@@ -2,6 +2,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	background-color: #C9D3A7;
 	color: #5A7250;
+	width: 100%;
 }
 
 .container {
@@ -16,6 +17,16 @@ h1 {
 	color: black;
 	font-weight: 800;
 	font-size: larger;
+}
+
+.new-user-form {
+	padding: 50px;
+	margin: 0 auto;
+	width: 40%;
+}
+
+.new-user-form input {
+	float: right;
 }
 
 .food-categories input[type="submit"] {
