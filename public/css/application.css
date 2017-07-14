@@ -6,11 +6,32 @@ body {
 }
 
 .container {
-	padding: 10px 20px;
+
 }
 
 h1 {
 	color: #5A7250;
+	font-size: xx-large;
+}
+
+a {
+	text-decoration: none;
+}
+
+.block {
+    display: block;
+    float: left;
+    top: 0;
+}
+
+.block2 {
+    margin-top: 7px;
+    float: right;
+}
+
+.options.container {
+	padding-top: 200px;
+	margin-right: 25px;
 }
 
 .black {
@@ -42,8 +63,45 @@ h1 {
 	width: 500px;
 	display: block;
 	float: left;
-	padding: 0 50px 0 0;
+	padding: 10px 50px 0 0;
+	margin-top: 100px;
 }
+
+/*Navbar Styling*/
+
+nav.navbar {
+    position: fixed;
+    top: 0;
+    height: 100px;
+    width: 100%;
+}
+
+h1.nav {
+	float: left;
+	display: inline-block;
+	padding-left: 20px;
+}
+
+nav li {
+	float: right;
+	list-style-type: none;
+	text-decoration: none;
+	padding: 10px;
+	font-size: x-large;
+}
+
+nav li a {
+	color: #5A7250;
+}
+
+nav ul {
+	float: right;
+	margin-right: 50px;
+}
+
+
+
+
 
 /*Quote Styling*/
 blockquote {
@@ -55,6 +113,8 @@ blockquote {
 	line-height: 1.45;
 	position: relative;
 	color: #788b6f;
+	top: 100px;
+	margin-left: 25px;
 }
 
 blockquote:before {

@@ -15,7 +15,7 @@ post '/users' do
 
 	if params[:password] == params[:password_confirmation]
 		if user.save
-			redirect '/sessions/new'
+			redirect '/'
 		else
 			@errors = user.errors.full_messages
 			erb '/users/new'
@@ -23,5 +23,13 @@ post '/users' do
 	else
 		@errors = ['Match your passwords do not. Try again. Mmmmmmm.']
 		erb :'/users/new'
+	end
+end
+
+get '/users/:id' do 
+	if logged_in?
+		erb :'/users/show'
+	else
+		erb :'/sessions/new'
 	end
 end

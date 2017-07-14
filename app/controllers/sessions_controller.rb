@@ -6,13 +6,14 @@ end
 # POST SESSIONS
 post '/sessions' do 
 	@user = User.find_by(email: params[:email])
+	p @user
 
 	if @user && @user.authenticate(params[:password])
 		session[:id] = @user.id
 		redirect '/users/show'
 	else
 		@errors = ['Incorrect, your login or password is. Try again.']
-		erb :'/session/new'
+		erb :'/sessions/new'
 	end
 end
 
