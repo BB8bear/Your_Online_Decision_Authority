@@ -41,7 +41,7 @@ post '/submit' do
 	p @categories 
 
 
-	response = HTTParty.get("https://api.yelp.com/v3/businesses/search?categories=#{@categories}&location=#{@location}&sort=2&limit=10&term=restaurants&radius_filter=2")
+	response = HTTParty.get("https://api.yelp.com/v3/businesses/search?categories=#{@categories}&location=#{@location}&sort=2&limit=1&term=restaurants&radius_filter=2", headers: {"Authorization" => ENV['YELP_API_KEY']})
 
 	puts response.body, response.code, response.message, response.headers.inspect
 

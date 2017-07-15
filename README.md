@@ -1,4 +1,4 @@
-# Your Online Decision Authority
+# Your Online Decision Authority (Y.O.D.A.)
 
 <img class="inline" src="https://github.com/BB8bear/your_online_decision_authority/blob/master/public/yoda.png" width="300" height="300" />
 
