@@ -24,6 +24,10 @@ gem 'dotenv'
 
 gem 'httparty'
 
+gem 'http'
+gem 'json'
+
+
 group :test do
   gem 'shoulda-matchers'
   gem 'rack-test'

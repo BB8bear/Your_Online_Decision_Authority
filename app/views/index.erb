@@ -15,36 +15,62 @@
 </div>
 
 <div class="location container">
-	<h2>Your location, enter, you must.</h2>
+	
 
 	<form action="/" method="POST">
-		<p>Location: <input type="text" name="location" placeholder="Zip code"><input class="submit" type="submit" value="Submit"></p>
+		
 	</form>
 </div>
 
 <div class="options container">
-	<div class="instruction">
-		<h2>To remove undesired food options, click you must.</h2>
-	</div>
+	
 
 	<div class="food-categories">
-		<form action="/" method="POST">
-			<input type="submit" name="categories" value="mexican">
-			<input type="submit" name="categories" value="italian">
-			<input type="submit" name="categories" value="chinese">
-			<input type="submit" name="categories" value="japanese">
-			<input type="submit" name="categories" value="thai"><br>
-			<input type="submit" name="categories" value="cuban">
-			<input type="submit" name="categories" value="mediterranean">
-			<input type="submit" name="categories" value="korean">
-			<input type="submit" name="categories" value="french">
-			<input type="submit" name="categories" value="german">
+
+		<form action="/" method="POST" name="search_form">
+
+			<div class="location container">
+				<h2>Your location, enter, you must.</h2>
+			
+				<p>Location: <input type="text" name="search[location]" placeholder="Zip code"><input class="submit" type="submit" value="Submit"></p>
+			</div>
+
+			<div class="instruction">
+				<h2>To remove undesired food options, click you must.</h2>
+
+				<input id="mexican" type="checkbox" name="search[categories][]" value="mexican" checked><label for="mexican">Mexican</label>
+			
+				<input id="italian" type="checkbox" name="search[categories][]" value="italian" checked><label for="italian">Italian</label>
+			
+				<input id="chinese" type="checkbox" name="search[categories][]" value="chinese" checked><label for="chinese">Chinese</label>
+			
+				<input id="japanese" type="checkbox" name="search[categories][]" value="japanese" checked><label for="japanese">Japanese</label>
+			
+				<input id="thai" type="checkbox" name="search[categories][]" value="thai" checked><label for="thai">Thai</label>
+
+				<br>
+			
+				<input id="cuban" type="checkbox" name="search[categories][]" value="cuban" checked><label for="cuban">Cuban</label>
+			
+				<input id="mediterranean" type="checkbox" name="search[categories][]" value="mediterranean" checked><label for="mediterranean">Mediterranean</label>
+			
+				<input id="korean" type="checkbox" name="search[categories][]" value="korean" checked><label for="korean">Korean</label>
+				
+				<input id="french" type="checkbox" name="search[categories][]" value="french" checked><label for="french">French</label>
+
+				<input id="german" type="checkbox" name="search[categories][]" value="german" checked><label for="german">German</label>
+
+				<br>
+				<input class="submit" type="submit" value="Tell you where to eat, yoda will.">	
+			</div>
 		</form>
 	</div>
-</div>
 
-<div class="container get-suggestion">
-	<form action="/submit" method="POST">
-		<input class="submit" type="submit" value="Tell you where to eat, yoda will.">	
-	</form>
+	<div class="result container">
+		<% if @recommendation %>
+			<p>
+				Eat at <%= @recommendation %>, you should.
+			</p>
+		<% end %>
+	</div>
 </div>
