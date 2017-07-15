@@ -58,12 +58,20 @@ input[type="submit"]:hover {
 	float: right;
 }
 
-.food-categories input[type="submit"] {
-	border: none;
-	background: #e3e6d5;
-	padding: 10px;
-	color: #806246;
-	margin: 5px;
+label {
+    background-color: #e3e6d5;
+    padding: 10px;
+    display: inline-block;
+    margin: 5px;
+    color: #806246;
+}
+
+input[type=checkbox] {
+	display: none;
+}
+
+input[type=checkbox]:not(:checked) + label {
+   display: none;
 }
 
 .yoda {

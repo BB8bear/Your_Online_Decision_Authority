@@ -10,22 +10,20 @@ get '/new' do
 end
 
 post '/' do 
-	if (@categories = params[:categories])
-		p "Categories -------------------------------------"
-		p @categories
+	@location = params[:search][:location] if params[:search][:location].length > 0
 
-		session[:categories] = [] unless session[:categories]
+	@categories = params[:search][:categories] if params[:search][:categories].length > 0
 
-		session[:categories] << @categories
-		p "Session -------------------------------------"
-		p session[:categories]
-	end
+	if @location.length > 0 && @categories.length > 0
+		location = @location
+		categories = format_categories(@categories)
 
-	session[:location] = params[:location] if params[:location] && params[:location].length > 0
+		response = search(location, categories)
 
-	if (@location = session[:location])
-		p "Location -------------------------------------"
-		p session[:location]
+		search_result = response["businesses"]
+
+		@recommendation = search_result[0]["name"]
+
 		erb :index
 	else
 		@errors = ['Enter a location, you must. Herh herh herh.']
@@ -33,17 +31,19 @@ post '/' do
 	end
 end
 
-post '/submit' do 
-	@location = session[:location]
-	@categories = format_categories(session[:categories])
 
-	p "Formatted Categories -------------------------------------"
-	p @categories 
+	
 
 
-	response = HTTParty.get("https://api.yelp.com/v3/businesses/search?categories=#{@categories}&location=#{@location}&sort=2&limit=1&term=restaurants&radius_filter=2", headers: {"Authorization" => ENV['YELP_API_KEY']})
+	# response = HTTParty.get("https://api.yelp.com/v3/businesses/search?categories=#{@categories}&location=#{@location}&sort=2&limit=1&term=restaurants&radius_filter=2", headers: {"Authorization" => ENV['YELP_API_KEY']})
 
-	puts response.body, response.code, response.message, response.headers.inspect
+	# p response.body
+	# p response.code
+	# p response.message 
+	# p response.headers.inspect
+
+
+	# p Yelp.client.search('San Francisco', { term: 'food' })
 
 	# yelp = YelpAPI.new(@location, @categories)
 	# p "Yelp request return -------------------------------------"
@@ -52,4 +52,7 @@ post '/submit' do
 	# p suggestion
 
 	# return suggestion
-end
+
+
+
+	# p JSON.pretty_generate(response["businesses"])
