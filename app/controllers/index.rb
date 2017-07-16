@@ -14,7 +14,7 @@ post '/' do
 
 	@categories = params[:search][:categories] if params[:search][:categories].length > 0
 
-	if @location.length > 0 && @categories.length > 0
+	if @location && @location.length > 0 && @categories.length > 0
 		location = @location
 		categories = format_categories(@categories)
 
@@ -27,10 +27,9 @@ post '/' do
 		p @review_count = search_result["review_count"]
 		p @rating = search_result["rating"]
 		p @stars = star_rating(@rating)
-
-		erb :index
 	else
 		@errors = ['Enter a location, you must. Herh herh herh.']
-		redirect '/'
 	end
+
+	erb :index
 end

@@ -24,19 +24,25 @@
 
 <div class="options container">
 	
+<% if @errors %>
+
+  <%= erb :'_errors', layout: false, locals: { errors: @errors } %>
+
+<% end %>
+
 
 	<div class="food-categories">
 
 		<form action="/" method="POST" name="search_form">
 
 			<div class="location container">
-				<h2>Your location, enter, you must.</h2>
+				<h3>Your location, enter. Yes, hmmm.</h2>
 			
 				<p>Location: <input type="text" name="search[location]" placeholder="Zip code"></p>
 			</div>
 
 			<div class="instruction">
-				<h2>To remove undesired food options, click you must.</h2>
+				<h3>To remove any undesired food options, click you must.</h2>
 
 				<input id="mexican" type="checkbox" name="search[categories][]" value="mexican" checked><label for="mexican">Mexican</label>
 			
@@ -69,7 +75,7 @@
 	<div class="result container">
 		<% if @recommendation %>
 			<p>
-				Eat at <%= @recommendation %>, you should. 
+				Eat at <%= @recommendation %>, you should. Hmm, yeesssss.
 				<%= erb :'_result', layout: false, locals: { rating: @rating, review_count: @review_count, url: @url, recommendation: @recommendation, stars: @stars } %>
 			</p>
 		<% end %>

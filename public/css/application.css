@@ -5,13 +5,31 @@ body {
 	width: 100%;
 }
 
-.container {
+.errors {
+    display: block;
+    margin: auto;
+    color: white;
+    font-size: xx-large;
+    font-weight: 600;
+    text-decoration: none;
+}
 
+ul {
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
 }
 
 h1 {
 	color: #5A7250;
 	font-size: xx-large;
+}
+
+h3 {
+    font-size: x-large;
+    font-weight: 600;
 }
 
 a {
@@ -58,11 +76,11 @@ input[type="submit"]:hover {
 }
 
 label {
-    background-color: #e3e6d5;
-    padding: 10px;
+    background: none;
+    padding: 20px 20px 20px 0;
     display: inline-block;
-    margin: 5px;
-    color: #806246;
+    color: white;
+    font-size: larger;
 }
 
 input[type=checkbox] {
@@ -71,6 +89,10 @@ input[type=checkbox] {
 
 input[type=checkbox]:not(:checked) + label {
    display: none;
+}
+
+.result p {
+    font-size: 30px;
 }
 
 .yoda {
@@ -89,10 +111,12 @@ input[type=checkbox]:not(:checked) + label {
 }
 
 input.submit {
-    background: none;
+    background: #9fb88c;
     border: none;
-    font-size: x-large;
-    padding: 20px;
+    font-size: xx-large;
+    font-weight: 800;
+    padding: 10px;
+    margin: 10px 10px 10px 0;
 }
 
 /*Navbar Styling*/
@@ -136,14 +160,14 @@ input#logout {
 
 /*Quote Styling*/
 blockquote {
-	font-size: 18px;
+	font-size: 22px;
 	font-style: italic;
-	width: 500px;
+	width: 400px;
 	margin: 0.25em 0;
 	padding: 0.25em 40px;
 	line-height: 1.45;
 	position: relative;
-	color: #788b6f;
+	color: #64693e;
 	top: 100px;
 	margin-left: 25px;
 }
@@ -153,14 +177,14 @@ blockquote:before {
 	content: "\201C";
 	font-size: 80px;
 	position: absolute;
-	left: -20px;
+	left: -10px;
 	top: -20px;
-	color: #ece4c1;
+	color: #e3e6d5;
 }
 
 blockquote cite {
-	color: #96a58f;
-	font-size: 14px;
+	color: #73784c;
+	font-size: 18px;
 	display: block;
 	margin-top: 5px;
 }
@@ -182,7 +206,6 @@ blockquote cite:before {
     padding: 10px;
     background-color: white;
     width: 350px;
-    float:right;
 }
 
 .arrange_unit {
@@ -256,7 +279,7 @@ blockquote cite:before {
 /*Yelp Stars Styling*/
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
-developers-pkg.css:1
+
 .i-stars {
     background-image: url(https://s3-media2.fl.yelpcdn.com/assets/srv0/yelp_design_web/9ad0d1950864/assets/img/stars/stars@2x.png);
 }
