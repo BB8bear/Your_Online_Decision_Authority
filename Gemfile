@@ -16,8 +16,6 @@ gem 'shotgun', '~>0.9.1'
 
 gem 'pry-byebug'
 
-gem 'yelp'
-
 gem 'bcrypt'
 
 gem 'dotenv'

@@ -7,19 +7,19 @@
 
 
 ## Eat, you must.
-This app will let Yoda choose a restaurant for the user to visit based on user input. Restaurant Picker will take user input to remove options from a food category list, and randomly select a category for the user. 
+This app will choose a restaurant for the user to visit based on user input. Y.O.D.A. will allow the user to remove options from a food category list, and randomly select a restaurant for the user. 
 
-The user will have the option to re-spin the food category selection wheel, or continue to the restaurant suggestion. If they re-spin the category that was originally returned will be removed from the option list in future spins.
-
-The app will then return the nearest top rated restaurant in that category, based on user location. The user will have the option to pass on the first result and ask for the second result, or the user will have the option to re-spin the food category selection wheel and start over.
+Y.O.D.A. will make a call to Yelp's Fusion API and then return the nearest top rated restaurant in that category, based on user location.
 
 
 ## Stretch Goals
 - Find user location based on GPS.
-- Give user directions to restaurant from their current location.
 
 
 ## Resources
 - [Yelp's Fusion API](https://www.yelp.com/developers/documentation/v3)
 - [Postman](https://www.getpostman.com/)
 - [Heroku](https://www.heroku.com/)
+- [Pixlr Editor](https://pixlr.com/editor/)
+- [httparty](https://github.com/jnunemaker/httparty)
+- [BCrypt](https://github.com/codahale/bcrypt-ruby)
