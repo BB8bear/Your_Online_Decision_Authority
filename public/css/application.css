@@ -130,6 +130,8 @@ nav.navbar {
     top: 0;
     height: 100px;
     width: 100%;
+    background-color: #C9D3A7;
+    z-index: 999;
 }
 
 h1.nav {
@@ -210,6 +212,7 @@ blockquote cite:before {
     padding: 10px;
     background-color: white;
     width: 350px;
+    /*margin-left: 550px;*/
 }
 
 .arrange_unit {
