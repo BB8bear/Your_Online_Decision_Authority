@@ -32,7 +32,7 @@
 			<div class="location container">
 				<h2>Your location, enter, you must.</h2>
 			
-				<p>Location: <input type="text" name="search[location]" placeholder="Zip code"><input class="submit" type="submit" value="Submit"></p>
+				<p>Location: <input type="text" name="search[location]" placeholder="Zip code"></p>
 			</div>
 
 			<div class="instruction">
@@ -69,8 +69,11 @@
 	<div class="result container">
 		<% if @recommendation %>
 			<p>
-				Eat at <%= @recommendation %>, you should.
+				Eat at <%= @recommendation %>, you should. 
+				<%= erb :'_result', layout: false, locals: { rating: @rating, review_count: @review_count, url: @url, recommendation: @recommendation, stars: @stars } %>
 			</p>
 		<% end %>
 	</div>
 </div>
+
+

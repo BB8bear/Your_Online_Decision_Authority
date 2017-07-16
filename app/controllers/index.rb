@@ -20,9 +20,13 @@ post '/' do
 
 		response = search(location, categories)
 
-		search_result = response["businesses"]
+		search_result = response["businesses"][0]
 
-		@recommendation = search_result[0]["name"]
+		p @recommendation = search_result["name"]
+  		p @url = search_result["url"]
+		p @review_count = search_result["review_count"]
+		p @rating = search_result["rating"]
+		p @stars = star_rating(@rating)
 
 		erb :index
 	else
@@ -30,29 +34,3 @@ post '/' do
 		redirect '/'
 	end
 end
-
-
-	
-
-
-	# response = HTTParty.get("https://api.yelp.com/v3/businesses/search?categories=#{@categories}&location=#{@location}&sort=2&limit=1&term=restaurants&radius_filter=2", headers: {"Authorization" => ENV['YELP_API_KEY']})
-
-	# p response.body
-	# p response.code
-	# p response.message 
-	# p response.headers.inspect
-
-
-	# p Yelp.client.search('San Francisco', { term: 'food' })
-
-	# yelp = YelpAPI.new(@location, @categories)
-	# p "Yelp request return -------------------------------------"
-	# p yelp
-	# suggestion = yelp.search
-	# p suggestion
-
-	# return suggestion
-
-
-
-	# p JSON.pretty_generate(response["businesses"])

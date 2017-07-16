@@ -62,3 +62,28 @@ def business(business_id)
   response = HTTP.auth(bearer_token).get(url)
   response.parse
 end
+
+def star_rating(rating)
+  case when rating == 0
+    return "0"
+  when rating == 1
+    return "1"
+  when rating == 1.5
+    return "1-half"
+  when rating == 2
+    return "2"
+  when rating == 2.5
+    return "2-half"
+  when rating == 3
+    return "3"
+  when rating == 3.5
+    return "3-half"
+  when rating == 4
+    return "4"
+  when rating == 4.5
+    return "4-half"
+  when rating == 5
+    return "5"
+  end
+end
+

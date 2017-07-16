@@ -38,7 +38,6 @@ input[type="submit"]:hover {
 }
 
 .options.container {
-	/*padding-top: 50px;*/
 	margin-right: 25px;
 }
 
@@ -169,4 +168,183 @@ blockquote cite {
 blockquote cite:before {
 	content: "\2014 \2009";
 }
+
+
+/*Yelp Logo Styling*/
+
+.result {
+	display: inline-block;
+}
+
+.review-header {
+    margin-bottom: 12px;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 10px;
+    background-color: white;
+    width: 350px;
+    float:right;
+}
+
+.arrange_unit {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.media-title a {
+    font-weight: bold;
+    color: #0073bb;
+    text-decoration: none;
+}
+
+.biz-rating-large {
+    margin: 6px 0;
+}
+
+.biz-rating-large .rating-large {
+    float: left;
+    margin: -1px 6px 0 0;
+}
+
+.review-header img {
+    height: 40px;
+}
+
+.offscreen {
+    clip: rect(0 0 0 0);
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+}
+
+.rating-qualifier {
+    display: block;
+    float: left;
+    color: #666;
+    font-weight: normal;
+}
+
+.review-header img {
+    height: 40px;
+    vertical-align: middle;
+}
+
+.arrange_unit--fill {
+    width: 100%;
+}
+
+.clearfix {
+}
+
+.rating, .rating-large, .rating-very-large {
+    position: relative;
+    overflow: hidden;
+}
+
+.i-stars--regular-5 {
+    width: 102px;
+    height: 18px;
+    background-position: 0 -402px;
+}
+
+
+/*Yelp Stars Styling*/
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
+developers-pkg.css:1
+.i-stars {
+    background-image: url(https://s3-media2.fl.yelpcdn.com/assets/srv0/yelp_design_web/9ad0d1950864/assets/img/stars/stars@2x.png);
+}
+
+.rating, .rating-large, .rating-very-large {
+    position: relative;
+    overflow: hidden;
+}
+
+.offscreen {
+    clip: rect(0 0 0 0);
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+}
+
+.i-stars {
+    background: url(https://s3-media1.fl.yelpcdn.com/assets/srv0/yelp_design_web/41341496d9db/assets/img/stars/stars.png) no-repeat;
+    background-size: 132px 560px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.i-stars--large-0 {
+    width: 132px;
+    height: 24px;
+    background-position: 0 -0;
+}
+
+.i-stars--large-1 {
+    width: 132px;
+    height: 24px;
+    background-position: 0 -24px;
+}
+
+.i-stars--large-1-half {
+    width: 132px;
+    height: 24px;
+    background-position: 0 -48px;
+}
+
+.i-stars--large-2 {
+    width: 132px;
+    height: 24px;
+    background-position: 0 -72px;
+}
+
+.i-stars--large-2-half {
+    width: 132px;
+    height: 24px;
+    background-position: 0 -96px;
+}
+
+.i-stars--large-3 {
+    width: 132px;
+    height: 24px;
+    background-position: 0 -120px;
+}
+
+.i-stars--large-3-half {
+    width: 132px;
+    height: 24px;
+    background-position: 0 -144px;
+}
+
+.i-stars--large-4 {
+    width: 132px;
+    height: 24px;
+    background-position: 0 -168px;
+}
+
+.i-stars--large-4-half {
+    width: 132px;
+    height: 24px;
+    background-position: 0 -192px;
+}
+
+.i-stars--large-5 {
+    width: 132px;
+    height: 24px;
+    background-position: 0 -216px;
+}
+
+
+
+
+
 
