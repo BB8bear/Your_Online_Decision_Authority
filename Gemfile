@@ -24,6 +24,7 @@ gem 'httparty'
 
 gem 'http'
 gem 'json'
+gem 'yelp'
 
 
 group :test do

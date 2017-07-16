@@ -23,6 +23,7 @@ require "sinatra/reloader" if development?
 require 'erb'
 require 'pry-byebug'
 require 'httparty'
+require 'yelp'
 
 
 # Some helper constants for path-centric logic
